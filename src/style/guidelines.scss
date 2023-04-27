@@ -1,0 +1,51 @@
+.guidelines-container{
+    width: 90vw;
+    margin: auto ;
+    .heading-info-section{
+        text-align: center;
+        
+        h2{
+            border-bottom: 1.1px solid #df376749;
+            width: fit-content;
+            margin: 1vmax auto;
+            padding: 1vmax;
+            color: #DF3768;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            font-size: 2vmax;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3px;
+            font-size: 1vmax;
+            margin-bottom: 1rem;
+            color: #df376873;
+
+            b{
+                font-weight: 600;
+                font-size: 1vmax;
+            }
+        }
+    }
+
+    .video-container{
+
+        .heading-of-guideline{
+            text-align: center;
+
+            h2{
+                padding: 5vmax;
+                color: #c7194bd1;
+                font-family: 'PT Sans Caption', sans-serif;
+                font-size: 2vmax;
+            }
+
+          
+        }
+    }
+    
+   
+}

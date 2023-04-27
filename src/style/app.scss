@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap');
+@import './header.scss';
+@import './guidelines.scss';
+@import './buttonsOfGuidelines.scss';
+@import './videoCard.scss';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    // background-color: #f7f8f3;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+// ant design form button class
+.ant-btn-class {
+    background-color: #DF3768;
+    // justify-content: center !important;
+    &:hover {
+        background-color: #fff !important;
+        color: #DF3768 !important;
+        border: 1px solid #DF3768 !important;
+    }
+}
+
+.ant-btn-parent-class {
+    display: flex;
+    justify-content: center;
+}
+
+.ant-checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ant-checkbox-wrapper {
+    flex: 1 0 100%;
+    margin-left: 8px;
+}
+
+// personal detail form steper current dot background
+.ant-steps .ant-steps-item-process .ant-steps-item-icon>.ant-steps-icon .ant-steps-icon-dot {
+    background: #df3768 !important;
+}
+
+.ant-steps .ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-tail::after {
+    background: #df3768 !important;
+}
+
+.ant-steps .ant-steps-item-finish .ant-steps-item-icon>.ant-steps-icon .ant-steps-icon-dot {
+    background: #df3768 !important;
+}
+
+// form stepper button - 
+.nextHoverBtn:hover {
+    background-color: #bb2350 !important;
+    transition: all 0.4s ease;
+}
+
+.previousHoverBtn:hover {
+    border: 1px solid #df3768 !important;
+    transition: all 0.4s ease;
+    color: #df3768 !important;
+}
+
+//  ant design custom  steper style 
+@media screen and (max-width:600px) {
+    // steper title text -
+     :where(.css-dev-only-do-not-override-k83k30).ant-steps .ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title {
+        font-size: 9px;
+    }
+     :where(.css-dev-only-do-not-override-k83k30).ant-steps .ant-steps-item-wait>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title {
+        font-size: 9px;
+    }
+     :where(.css-dev-only-do-not-override-k83k30).ant-steps .ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title {
+        font-size: 9px;
+    }
+     :where(.css-dev-only-do-not-override-k83k30).ant-steps.ant-steps-vertical {
+        display: flex;
+        flex-direction: row;
+    }
+     :where(.css-dev-only-do-not-override-k83k30).ant-steps.ant-steps-vertical>.ant-steps-item {
+        width: 20px;
+        text-align: center;
+    }
+     :where(.css-dev-only-do-not-override-k83k30).ant-steps.ant-steps-vertical>.ant-steps-item .ant-steps-item-icon {
+        float: none;
+    }
+    // line 
+    .ant-steps-item>.ant-steps-item-container>.ant-steps-item-tail {
+        display: none !important;
+    }
+}
+
+// steper head title line space
+ :where(.css-dev-only-do-not-override-k83k30).ant-steps.ant-steps-vertical>.ant-steps-item .ant-steps-item-title {
+    line-height: 19px;
+}

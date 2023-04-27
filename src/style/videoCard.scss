@@ -1,0 +1,38 @@
+.video-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+   
+    .demo1{
+       div{
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 5px;
+        text-align:start ;
+        &:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        iframe{
+            border-radius: 5px;
+            
+        }
+
+        p{
+            background-color: inherit;
+            text-align: start;
+            // color: #f7f8f3;
+            font-size: 1.5vmax;
+
+            span{
+                background-color: inherit;
+                font-size: 12px;
+                opacity: 90%;
+                cursor: pointer;
+            }
+        }
+    }
+       }
+}
